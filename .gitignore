@@ -1,6 +1,7 @@
 # ESP-IDF .gitignore
 
 # Build directories
+build
 build/
 build_*_*/
 

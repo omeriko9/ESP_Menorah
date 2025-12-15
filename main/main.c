@@ -14,15 +14,15 @@
 
 // --- Configuration ---
 #define BUTTON_GPIO     GPIO_NUM_0
-#define SHAMASH_GPIO    GPIO_NUM_21
+#define SHAMASH_GPIO    GPIO_NUM_5
 #define CANDLE_1_GPIO   GPIO_NUM_22
 #define CANDLE_2_GPIO   GPIO_NUM_23
 #define CANDLE_3_GPIO   GPIO_NUM_19
 #define CANDLE_4_GPIO   GPIO_NUM_18
-#define CANDLE_5_GPIO   GPIO_NUM_5
-#define CANDLE_6_GPIO   GPIO_NUM_17
-#define CANDLE_7_GPIO   GPIO_NUM_16
-#define CANDLE_8_GPIO   GPIO_NUM_4
+#define CANDLE_5_GPIO   GPIO_NUM_4
+#define CANDLE_6_GPIO   GPIO_NUM_2
+#define CANDLE_7_GPIO   GPIO_NUM_13
+#define CANDLE_8_GPIO   GPIO_NUM_12
 
 #define LEDC_TIMER              LEDC_TIMER_0
 #define LEDC_DUTY_RES           LEDC_TIMER_8_BIT // Set duty resolution to 8 bits
@@ -150,7 +150,7 @@ void flicker_task(void *pvParameter) {
                 // Random duty cycle between 100 and 255 for flicker effect
                 // 255 is max brightness (8-bit)
                 // 100 is dim but visible
-                uint32_t duty = (rand() % 156) + 100; 
+                uint32_t duty = (rand() % 206) + 50; 
                 ledc_set_duty(led_configs[i].mode, led_configs[i].channel, duty);
                 ledc_update_duty(led_configs[i].mode, led_configs[i].channel);
             } else {
