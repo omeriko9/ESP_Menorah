@@ -1,0 +1,79 @@
+# ESP-IDF .gitignore
+
+# Build directories
+build/
+build_*_*/
+
+# SDK configuration files
+sdkconfig
+sdkconfig.old
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*~
+.#*
+\#*#
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+project_description.json
+
+# Bootloader and partition table
+bootloader/
+partition_table/
+
+# GDB
+gdbinit/
+
+# Logs directory
+log/
+
+# Config directory (if generated)
+config/
+
+# ESP-IDF components (if local)
+components/*/build/
+
+# Managed components
+managed_components/
+
+# Dependencies lock
+dependencies.lock
+
+# Test coverage
+*.gcda
+*.gcno
+coverage.info
+
+# Pytest logs
+pytest-embedded/
+pytest_embedded_log/
+
+# Clangd
+.clangd
+
+# Vale
+.vale/
+
+# MyPy cache
+.mypy_cache
+
+# Flake8 output
+flake8_output.txt
