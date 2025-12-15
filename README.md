@@ -1,5 +1,7 @@
 # ESP32 Menorah Project
 
+https://github.com/user-attachments/assets/7ba0647f-31a6-4da7-8345-d67b56a75962
+
 This project simulates a Menorah using an ESP32. It features:
 - **9 LEDs**: 1 Shamash + 8 Candles.
 - **Flicker Effect**: Uses PWM (LEDC) to simulate candle fire.
